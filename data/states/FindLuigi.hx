@@ -9,7 +9,7 @@ var vlcY:Float = 180;
 // end
 
 var icons:FlxSpriteGroup<FlxSprite> = new FlxSpriteGroup();
-var luigi:FlxSprite = new FlxSprite().loadGraphic(Paths.image('luigi/luigi'));
+var luigi:FlxSprite = new FlxSprite().loadGraphic(Paths.image('luigi'));
 var found:Bool = false;
 
 function getRdmX(sprWidth:Float):Int
@@ -30,7 +30,7 @@ function create() {
     CoolUtil.playMusic(Paths.music('luigi'));
 
     // Caching ig?
-    var images:Array<String> = [Paths.image('luigi/mario'), Paths.image('luigi/wario'), Paths.image('luigi/yoshi')];
+    var images:Array<String> = [Paths.image('mario'), Paths.image('wario'), Paths.image('yoshi')];
     add(icons);
 
     for (i in 0...amount) {
